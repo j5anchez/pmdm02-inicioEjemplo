@@ -1,3 +1,4 @@
+import { GestionPersonasService } from './../../servicios/gestion-personas.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -9,8 +10,8 @@ export class InsertarPage implements OnInit {
   id: string;
   nombre: string;
   apellido: string;
-  
-  constructor() { }
+
+  constructor(private gestionPersonas:GestionPersonasService) { }
 
   ngOnInit() {
   }
@@ -18,6 +19,7 @@ export class InsertarPage implements OnInit {
   onClick() {
 
     // Insertar
+    this.gestionPersonas.insertarPersona(this.id, this.nombre, this.apellido);
   }
 
 }
