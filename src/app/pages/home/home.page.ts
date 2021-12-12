@@ -15,21 +15,21 @@ export interface IPersona {
 export class HomePage {
   personas: IPersona[] = [
     {
-      id: "aa",
-      nombre: "Aitor",
-      apellido: "Arana"
+      id: 'aa',
+      nombre: 'Aitor',
+      apellido: 'Arana'
     },
     {
-      id: "sr",
-      nombre: "Sara",
-      apellido: "Ruiz"
+      id: 'sr',
+      nombre: 'Sara',
+      apellido: 'Ruiz'
     },
     {
-      id: "mo",
-      nombre: "Miren",
-      apellido: "Ojer"
+      id: 'mo',
+      nombre: 'Miren',
+      apellido: 'Ojer'
     }
-  ]
+  ];
 
   constructor() {}
 
